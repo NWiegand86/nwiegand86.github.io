@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body, html {
+    padding:0;
+    margin:0;
+    background-color: #FAF6F0
+}
+
+header {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+}
+
+nav a {
+    padding-right: 27px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.remove-padding {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2c2a2a;
+}
+
+.work-link {
+    color: #4B73FF;
+}
+
+.container {
+    max-width: 1205px;
+    min-height: 1708px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+        ". slide-1 slide-1 ."
+        "slide-2 slide-2 slide-3 slide-3"
+        "slide-4 slide-4 slide-5 slide-5"
+        ". slide-6 slide-6 .";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 34px;
+    row-gap: 69px;
+    margin-top: 200px;
+}
+
+.title {
+    grid-area: slide-1;
+}
+
+.about {
+    grid-area: slide-2;
+}
+
+.mood {
+    grid-area: slide-3
+}
+
+.color {
+    grid-area: slide-4;
+}
+
+.looks {
+    grid-area: slide-5;
+}
+
+.flats {
+    grid-area: slide-6;
+}
+
+.shadow {
+    filter: drop-shadow(0px 5px 2px #c4c4c4);
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    padding-left: 10px;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}

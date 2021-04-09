@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body, html {
+    padding:0;
+    margin:0;
+    background-color: #FAF6F0
+}
+
+header {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+}
+
+nav a {
+    padding-right: 27px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.remove-padding {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2c2a2a;
+}
+
+.work-link {
+    color: #4B73FF;
+}
+
+.intro {
+    max-width: 771px;
+    margin: auto;
+    height: 650px;
+    align-items: center;
+    display: flex;
+}
+
+.italic {
+    font-style: italic;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 64px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 84px;
+}
+
+.main-content {
+    max-width: 1205px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex-flow: row wrap;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 286px;
+    margin: 30px 0 0 0;
+    height: 250px;
+}
+
+h3 {
+    color: #7E7D7D;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 20px 0 0 0;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 30px 0 0 0;
+}
+
+.content {
+    margin-left: 10px
+}
+
+h2 a:hover {
+    color: #4B73FF;
+    transition: 0.4s;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.email {
+    padding-left: 10px;
+}
+
+article img:hover {
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.image:hover {
+    background-color: black;
+}
+
+.image a {
+    display:inline-block;
+    height: 342px;
+    width: 342px;
+}
+
+.image {
+    display:inline-block;
+    height: 342px;
+    width: 342px;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
