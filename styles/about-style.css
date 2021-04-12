@@ -40,6 +40,12 @@ a {
     justify-content: center;
     margin-top: 100px;
 }
+
+.wrapper img {
+    max-width:100%;
+    height:auto;
+}
+
 h2 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 40px;
@@ -132,4 +138,19 @@ footer {
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+    margin: 0 15px;
+}
+
+.wrapper {
+    margin: 0 15px;
+}
+
+.text {
+    margin: 0 15px;
+}
+
 }
