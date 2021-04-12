@@ -176,7 +176,7 @@ article img:hover {
     -webkit-animation-name: fadeInUp;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) and (orientation: portrait) {
     h1 {
         font-size: 38px;
         line-height: 56px;
@@ -208,7 +208,7 @@ article img:hover {
     }
 }
 
-@media screen and (max-width: 800px) and (orientation: portrait) {
+@media screen and (min-width: 800px) and (orientation: portrait) {
     header {
     margin: 0 15px;
 }
