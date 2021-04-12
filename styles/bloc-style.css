@@ -35,6 +35,10 @@ a {
     color: #4B73FF;
 }
 
+.img img {
+    max-width:100%;
+}
+
 .container {
     max-width: 1205px;
     min-height: 1708px;
@@ -134,4 +138,17 @@ footer {
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+    margin: 0 15px;
+}
+.container {
+    margin: 70px 15px;
+    display: block;
+}
+.img img {
+   padding-bottom: 20px;
+}
 }
