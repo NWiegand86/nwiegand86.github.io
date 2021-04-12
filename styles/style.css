@@ -175,3 +175,25 @@ article img:hover {
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
 }
+
+@media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 38px;
+        line-height: 56px;
+    }
+    .intro {
+        margin: 0 15px;
+        height: 400px;
+    }
+    header {
+        margin: 0 15px;
+    }
+    p {
+        height: 180px;
+    }
+    .main-content {
+        justify-content: center;
+    
+    }
+    
+    }
