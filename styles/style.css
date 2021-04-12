@@ -197,3 +197,12 @@ article img:hover {
     }
     
     }
+
+    @media screen and (max-width: 1050px) and (orientation: landscape) {
+        header {
+        margin: 0 15px;
+    }
+    .main-content {
+        justify-content: space-evenly;
+        max-width: 1000px;
+    }
